@@ -47,7 +47,7 @@ public class Activity1 {
 		driver.findElement(AppiumBy.accessibilityId("equals")).click();
 		
 		//Find the result
-		String result = driver.findElement(AppiumBy.id("result")).getText();
+		String result = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@resource-id=\"com.android.calculator2:id/result\"]")).getText();
 		
 		//Assertion
 		Assert.assertEquals(result, "12");
